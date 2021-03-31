@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const API_KEY = 'AIzaSyCHUCmpR7cT_yDFHC98CZJy2LTms-IwDlM';
-timeout = 500;
+const timeout = 500;
 
 const Convert = ({ language, text }) => {
   const [translated, setTranslated] = useState('');
