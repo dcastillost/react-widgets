@@ -31,7 +31,7 @@ const Search = () => {
       setResults(data.query.search);
     };
 
-    if(term) search();
+    if(debouncedTerm) search();
   }, [debouncedTerm]);
 
   const renderedResults = results.map((result) => {
